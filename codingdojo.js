@@ -2,10 +2,17 @@ function print(args) {
     console.log(args)
 };
 
+//the limit
 const n = 7;
+
 function display1() {
-    let str = " * ";
-    print(str);
+    for (let i = 1; i <= n; i++) {
+        let str = "";
+        for (let j = 1; j <= (i * 2) - 1; j++) {
+            str += " * ";
+        }
+        print(str);
+    }
 }
 
 display1();
